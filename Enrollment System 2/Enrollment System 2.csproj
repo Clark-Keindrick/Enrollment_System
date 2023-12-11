@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3246EECC-E036-4AC5-AF2A-A6D811AAB30B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Enrollment_System_2</RootNamespace>
+    <AssemblyName>Enrollment System 2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enroll.Designer.cs">
+      <DependentUpon>Enroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ENROLLMENT_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MVButtons\CJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MVButtons\CJRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CJcontrols\CJRoundTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CJcontrols\CJRoundTextbox.Designer.cs">
+      <DependentUpon>CJRoundTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CJcontrols\CJTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CJcontrols\CJTextbox.Designer.cs">
+      <DependentUpon>CJTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enrollment.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enrollment.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MVButtons\CJButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MVButtons\CJDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Professor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor.Designer.cs">
+      <DependentUpon>Professor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programs.Designer.cs">
+      <DependentUpon>Programs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subjects.Designer.cs">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CJcontrols\CJRoundTextbox.resx">
+      <DependentUpon>CJRoundTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CJcontrols\CJTextbox.resx">
+      <DependentUpon>CJTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enroll.resx">
+      <DependentUpon>Enroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor.resx">
+      <DependentUpon>Professor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programs.resx">
+      <DependentUpon>Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subjects.resx">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="enrollment.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>enrollment.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="enrollment.dbml.layout">
+      <DependentUpon>enrollment.dbml</DependentUpon>
+    </None>
+    <None Include="ENROLLMENT_DBDataSet.xsc">
+      <DependentUpon>ENROLLMENT_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ENROLLMENT_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ENROLLMENT_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ENROLLMENT_DBDataSet.xss">
+      <DependentUpon>ENROLLMENT_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\course.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subjects-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-professor-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subjects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\programs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="button2.BackgroundImage.png" />
+    <None Include="Resources\licensing.png" />
+    <None Include="Resources\valid.png" />
+    <None Include="Resources\invalid.png" />
+    <None Include="Resources\calendarDark.png" />
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
