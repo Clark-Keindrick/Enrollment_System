@@ -17,7 +17,7 @@ namespace Enrollment_System_2
         string mis, status;
         int studid;
         enrollmentDataContext db = new enrollmentDataContext();
-        SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source = LAPTOP-7VJGOGAD\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
         public Enroll()
         {
             InitializeComponent();
