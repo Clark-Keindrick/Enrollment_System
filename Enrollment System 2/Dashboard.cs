@@ -16,7 +16,7 @@ namespace Enrollment_System_2
     {
         DataTable dt = new DataTable();
         enrollmentDataContext db = new enrollmentDataContext();
-        SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source = LAPTOP-7VJGOGAD\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
         
         public Dashboard()
         {
@@ -150,6 +150,11 @@ namespace Enrollment_System_2
         private void searchbox_Leave(object sender, EventArgs e)
         {
             enrolData.DataSource = db.enrollees();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

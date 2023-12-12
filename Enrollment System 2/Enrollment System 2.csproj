@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,10 +65,21 @@
     <Compile Include="Enroll.Designer.cs">
       <DependentUpon>Enroll.cs</DependentUpon>
     </Compile>
+    <Compile Include="enrollment.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enrollment.dbml</DependentUpon>
+    </Compile>
     <Compile Include="ENROLLMENT_DBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ENROLLMENT_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MVButtons\CJComboBox.cs">
       <SubType>UserControl</SubType>
@@ -87,11 +104,6 @@
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="enrollment.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>enrollment.dbml</DependentUpon>
     </Compile>
     <Compile Include="MVButtons\CJButtons.cs">
       <SubType>Component</SubType>
@@ -125,6 +137,9 @@
     <Compile Include="Subjects.Designer.cs">
       <DependentUpon>Subjects.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CJcontrols\CJRoundTextbox.resx">
       <DependentUpon>CJRoundTextbox.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Enroll.resx">
       <DependentUpon>Enroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professor.resx">
       <DependentUpon>Professor.cs</DependentUpon>
@@ -235,6 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="button2.BackgroundImage.png" />
+    <None Include="Icons\free-user-icon-3296.png" />
     <None Include="Resources\licensing.png" />
     <None Include="Resources\valid.png" />
     <None Include="Resources\invalid.png" />
