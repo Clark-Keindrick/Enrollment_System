@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FaceRecognition;
 
 namespace Enrollment_System_2
 {
@@ -23,6 +24,11 @@ namespace Enrollment_System_2
         }
 
         private void savmg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void capture_Click(object sender, EventArgs e)
         {
 
         }

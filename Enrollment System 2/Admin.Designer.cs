@@ -35,16 +35,26 @@ namespace Enrollment_System_2
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltime = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
+            this.settings = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnEnroll = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnClass = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnSub = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnPorg = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnProf = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnStud = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDash = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,16 +64,6 @@ namespace Enrollment_System_2
             this.Fname = new Enrollment_System_2.CJcontrols.CJTextbox();
             this.updateBTN = new Enrollment_System_2.MVButtons.CJButtons();
             this.deleteBTN = new Enrollment_System_2.MVButtons.CJButtons();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.settings = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.mname = new Enrollment_System_2.CJcontrols.CJTextbox();
             this.username = new Enrollment_System_2.CJcontrols.CJTextbox();
             this.cjTextbox1 = new Enrollment_System_2.CJcontrols.CJTextbox();
@@ -76,8 +76,6 @@ namespace Enrollment_System_2
             this.savmg = new Enrollment_System_2.MVButtons.CJButtons();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.progData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -86,6 +84,8 @@ namespace Enrollment_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.progData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +100,7 @@ namespace Enrollment_System_2
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1893, 68);
             this.panel1.TabIndex = 18;
@@ -128,6 +128,33 @@ namespace Enrollment_System_2
             this.lbldate.Size = new System.Drawing.Size(67, 29);
             this.lbldate.TabIndex = 31;
             this.lbldate.Text = "Date";
+            // 
+            // settings
+            // 
+            this.settings.BackgroundImage = global::Enrollment_System_2.Properties.Resources.profile;
+            this.settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.settings.FlatAppearance.BorderSize = 0;
+            this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings.Location = new System.Drawing.Point(1769, 4);
+            this.settings.Margin = new System.Windows.Forms.Padding(4);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(77, 53);
+            this.settings.TabIndex = 18;
+            this.settings.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Enrollment_System_2.Properties.Resources.menu;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(269, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(33, 30);
+            this.button1.TabIndex = 18;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -162,10 +189,22 @@ namespace Enrollment_System_2
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 68);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(260, 673);
             this.panel2.TabIndex = 18;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Enrollment_System_2.Properties.Resources.licensing;
+            this.pictureBox12.InitialImage = null;
+            this.pictureBox12.Location = new System.Drawing.Point(12, 410);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 32;
+            this.pictureBox12.TabStop = false;
             // 
             // btnLogout
             // 
@@ -175,7 +214,7 @@ namespace Enrollment_System_2
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnLogout.Location = new System.Drawing.Point(52, 471);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(209, 43);
             this.btnLogout.TabIndex = 18;
@@ -191,13 +230,25 @@ namespace Enrollment_System_2
             this.btnEnroll.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnroll.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnEnroll.Location = new System.Drawing.Point(52, 410);
-            this.btnEnroll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnroll.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnroll.Name = "btnEnroll";
             this.btnEnroll.Size = new System.Drawing.Size(209, 43);
             this.btnEnroll.TabIndex = 33;
             this.btnEnroll.Text = "Enroll";
             this.btnEnroll.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnEnroll.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Enrollment_System_2.Properties.Resources.logout;
+            this.pictureBox7.InitialImage = null;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 471);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 12;
+            this.pictureBox7.TabStop = false;
             // 
             // btnClass
             // 
@@ -207,13 +258,25 @@ namespace Enrollment_System_2
             this.btnClass.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClass.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnClass.Location = new System.Drawing.Point(52, 348);
-            this.btnClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClass.Margin = new System.Windows.Forms.Padding(4);
             this.btnClass.Name = "btnClass";
             this.btnClass.Size = new System.Drawing.Size(209, 43);
             this.btnClass.TabIndex = 18;
             this.btnClass.Text = "Classes";
             this.btnClass.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnClass.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Enrollment_System_2.Properties.Resources._class;
+            this.pictureBox6.InitialImage = null;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 348);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.TabStop = false;
             // 
             // btnSub
             // 
@@ -223,13 +286,25 @@ namespace Enrollment_System_2
             this.btnSub.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSub.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSub.Location = new System.Drawing.Point(52, 287);
-            this.btnSub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSub.Margin = new System.Windows.Forms.Padding(4);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(209, 43);
             this.btnSub.TabIndex = 18;
             this.btnSub.Text = "Subjects";
             this.btnSub.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnSub.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Enrollment_System_2.Properties.Resources.subjects;
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 287);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
             // 
             // btnPorg
             // 
@@ -238,13 +313,25 @@ namespace Enrollment_System_2
             this.btnPorg.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPorg.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnPorg.Location = new System.Drawing.Point(52, 225);
-            this.btnPorg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPorg.Margin = new System.Windows.Forms.Padding(4);
             this.btnPorg.Name = "btnPorg";
             this.btnPorg.Size = new System.Drawing.Size(209, 33);
             this.btnPorg.TabIndex = 18;
             this.btnPorg.Text = "Programs";
             this.btnPorg.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnPorg.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Enrollment_System_2.Properties.Resources.programs;
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 225);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 6;
+            this.pictureBox4.TabStop = false;
             // 
             // btnProf
             // 
@@ -253,13 +340,25 @@ namespace Enrollment_System_2
             this.btnProf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProf.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnProf.Location = new System.Drawing.Point(52, 164);
-            this.btnProf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProf.Margin = new System.Windows.Forms.Padding(4);
             this.btnProf.Name = "btnProf";
             this.btnProf.Size = new System.Drawing.Size(209, 32);
             this.btnProf.TabIndex = 18;
             this.btnProf.Text = "Professors";
             this.btnProf.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnProf.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Enrollment_System_2.Properties.Resources.teacher;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 164);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // btnStud
             // 
@@ -268,13 +367,25 @@ namespace Enrollment_System_2
             this.btnStud.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStud.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnStud.Location = new System.Drawing.Point(52, 102);
-            this.btnStud.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStud.Margin = new System.Windows.Forms.Padding(4);
             this.btnStud.Name = "btnStud";
             this.btnStud.Size = new System.Drawing.Size(209, 32);
             this.btnStud.TabIndex = 18;
             this.btnStud.Text = "Students";
             this.btnStud.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnStud.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Enrollment_System_2.Properties.Resources.student;
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 102);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // btnDash
             // 
@@ -283,7 +394,7 @@ namespace Enrollment_System_2
             this.btnDash.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDash.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnDash.Location = new System.Drawing.Point(52, 41);
-            this.btnDash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDash.Margin = new System.Windows.Forms.Padding(4);
             this.btnDash.Name = "btnDash";
             this.btnDash.Size = new System.Drawing.Size(209, 32);
             this.btnDash.TabIndex = 18;
@@ -291,13 +402,25 @@ namespace Enrollment_System_2
             this.btnDash.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnDash.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Enrollment_System_2.Properties.Resources.home;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 41);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(260, 68);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1633, 54);
             this.panel3.TabIndex = 2;
@@ -349,7 +472,7 @@ namespace Enrollment_System_2
             this.progData.EnableHeadersVisualStyles = false;
             this.progData.GridColor = System.Drawing.Color.SteelBlue;
             this.progData.Location = new System.Drawing.Point(563, 450);
-            this.progData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progData.Margin = new System.Windows.Forms.Padding(4);
             this.progData.Name = "progData";
             this.progData.ReadOnly = true;
             this.progData.RowHeadersVisible = false;
@@ -377,7 +500,7 @@ namespace Enrollment_System_2
             this.submitBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitBTN.ForeColor = System.Drawing.Color.White;
             this.submitBTN.Location = new System.Drawing.Point(285, 445);
-            this.submitBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submitBTN.Margin = new System.Windows.Forms.Padding(4);
             this.submitBTN.Name = "submitBTN";
             this.submitBTN.Size = new System.Drawing.Size(131, 59);
             this.submitBTN.TabIndex = 22;
@@ -395,10 +518,10 @@ namespace Enrollment_System_2
             this.Fname.ForeColor = System.Drawing.Color.DimGray;
             this.Fname.IsFocused = false;
             this.Fname.Location = new System.Drawing.Point(285, 211);
-            this.Fname.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Fname.Margin = new System.Windows.Forms.Padding(5);
             this.Fname.Multiline = false;
             this.Fname.Name = "Fname";
-            this.Fname.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.Fname.Padding = new System.Windows.Forms.Padding(9);
             this.Fname.PasswordChar = false;
             this.Fname.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.Fname.PlaceholderText = "Program";
@@ -420,7 +543,7 @@ namespace Enrollment_System_2
             this.updateBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBTN.ForeColor = System.Drawing.Color.White;
             this.updateBTN.Location = new System.Drawing.Point(285, 512);
-            this.updateBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateBTN.Margin = new System.Windows.Forms.Padding(4);
             this.updateBTN.Name = "updateBTN";
             this.updateBTN.Size = new System.Drawing.Size(131, 59);
             this.updateBTN.TabIndex = 27;
@@ -441,7 +564,7 @@ namespace Enrollment_System_2
             this.deleteBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBTN.ForeColor = System.Drawing.Color.White;
             this.deleteBTN.Location = new System.Drawing.Point(285, 579);
-            this.deleteBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(4);
             this.deleteBTN.Name = "deleteBTN";
             this.deleteBTN.Size = new System.Drawing.Size(131, 59);
             this.deleteBTN.TabIndex = 28;
@@ -449,129 +572,6 @@ namespace Enrollment_System_2
             this.deleteBTN.TextColor = System.Drawing.Color.White;
             this.deleteBTN.UseVisualStyleBackColor = false;
             this.deleteBTN.Click += new System.EventHandler(this.deleteBTN_Click);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::Enrollment_System_2.Properties.Resources.licensing;
-            this.pictureBox12.InitialImage = null;
-            this.pictureBox12.Location = new System.Drawing.Point(12, 410);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 32;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Enrollment_System_2.Properties.Resources.logout;
-            this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 471);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 12;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Enrollment_System_2.Properties.Resources._class;
-            this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 348);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Enrollment_System_2.Properties.Resources.subjects;
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 287);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Enrollment_System_2.Properties.Resources.programs;
-            this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 225);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Enrollment_System_2.Properties.Resources.teacher;
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 164);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Enrollment_System_2.Properties.Resources.student;
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 102);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Enrollment_System_2.Properties.Resources.home;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // settings
-            // 
-            this.settings.BackgroundImage = global::Enrollment_System_2.Properties.Resources.profile;
-            this.settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.settings.FlatAppearance.BorderSize = 0;
-            this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings.Location = new System.Drawing.Point(1769, 4);
-            this.settings.Margin = new System.Windows.Forms.Padding(4);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(77, 53);
-            this.settings.TabIndex = 18;
-            this.settings.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Enrollment_System_2.Properties.Resources.menu;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(269, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 30);
-            this.button1.TabIndex = 18;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // mname
             // 
@@ -755,6 +755,7 @@ namespace Enrollment_System_2
             this.capture.Text = "CAPTURE";
             this.capture.TextColor = System.Drawing.Color.White;
             this.capture.UseVisualStyleBackColor = false;
+            this.capture.Click += new System.EventHandler(this.capture_Click);
             // 
             // savmg
             // 
@@ -802,7 +803,7 @@ namespace Enrollment_System_2
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -810,9 +811,6 @@ namespace Enrollment_System_2
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.progData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -821,6 +819,9 @@ namespace Enrollment_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.progData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
