@@ -16,6 +16,7 @@ namespace Enrollment_System_2
 {
     public partial class Programs : Form
     {
+        public Point mouseLocation;
         int id;
         enrollmentDataContext db = new enrollmentDataContext();
         public Programs()
@@ -161,6 +162,21 @@ namespace Enrollment_System_2
             enrl.Show();
 
             this.Hide();
+        }
+
+        private void Programs_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void Programs_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
         }
     }
 }

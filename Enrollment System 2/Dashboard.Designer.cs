@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltime = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
@@ -80,8 +80,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.enrolData = new System.Windows.Forms.DataGridView();
             this.label16 = new System.Windows.Forms.Label();
-            this.searchbox = new Enrollment_System_2.CJcontrols.CJTextbox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.searchbox = new Enrollment_System_2.CJcontrols.CJTextbox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -116,7 +116,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1278, 56);
+            this.panel1.Size = new System.Drawing.Size(1397, 56);
             this.panel1.TabIndex = 0;
             // 
             // lbltime
@@ -124,7 +124,7 @@
             this.lbltime.AutoSize = true;
             this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltime.ForeColor = System.Drawing.Color.White;
-            this.lbltime.Location = new System.Drawing.Point(1051, 15);
+            this.lbltime.Location = new System.Drawing.Point(1118, 15);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(57, 24);
             this.lbltime.TabIndex = 4;
@@ -135,7 +135,7 @@
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldate.ForeColor = System.Drawing.Color.White;
-            this.lbldate.Location = new System.Drawing.Point(864, 15);
+            this.lbldate.Location = new System.Drawing.Point(931, 15);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(52, 24);
             this.lbldate.TabIndex = 3;
@@ -147,7 +147,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1189, 3);
+            this.button2.Location = new System.Drawing.Point(1256, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 43);
             this.button2.TabIndex = 2;
@@ -420,14 +420,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(208, 56);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1070, 44);
+            this.panel3.Size = new System.Drawing.Size(1189, 44);
             this.panel3.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(900, 12);
+            this.label3.Location = new System.Drawing.Point(967, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 20);
             this.label3.TabIndex = 1;
@@ -504,7 +504,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.lblprof);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(492, 126);
+            this.panel5.Location = new System.Drawing.Point(525, 126);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(235, 103);
             this.panel5.TabIndex = 4;
@@ -558,7 +558,7 @@
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.lblsub);
             this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(759, 126);
+            this.panel6.Location = new System.Drawing.Point(824, 126);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(235, 103);
             this.panel6.TabIndex = 5;
@@ -612,7 +612,7 @@
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.lblprog);
             this.panel7.Controls.Add(this.label15);
-            this.panel7.Location = new System.Drawing.Point(1026, 126);
+            this.panel7.Location = new System.Drawing.Point(1119, 126);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(235, 103);
             this.panel7.TabIndex = 6;
@@ -667,14 +667,14 @@
             this.enrolData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.enrolData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.enrolData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.enrolData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.enrolData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.enrolData.ColumnHeadersHeight = 30;
             this.enrolData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.enrolData.EnableHeadersVisualStyles = false;
@@ -684,14 +684,14 @@
             this.enrolData.ReadOnly = true;
             this.enrolData.RowHeadersVisible = false;
             this.enrolData.RowHeadersWidth = 70;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.enrolData.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.enrolData.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.enrolData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.enrolData.Size = new System.Drawing.Size(1015, 347);
+            this.enrolData.Size = new System.Drawing.Size(1151, 347);
             this.enrolData.TabIndex = 7;
             // 
             // label16
@@ -705,6 +705,11 @@
             this.label16.Size = new System.Drawing.Size(163, 28);
             this.label16.TabIndex = 8;
             this.label16.Text = "List of Enrollees";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // searchbox
             // 
@@ -723,23 +728,18 @@
             this.searchbox.PasswordChar = false;
             this.searchbox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.searchbox.PlaceholderText = "Search Enrollees";
-            this.searchbox.Size = new System.Drawing.Size(486, 40);
+            this.searchbox.Size = new System.Drawing.Size(625, 40);
             this.searchbox.TabIndex = 9;
             this.searchbox.Texts = "Search Enrollees";
             this.searchbox.UnderlinedStyle = true;
             this.searchbox._TextChanged += new System.EventHandler(this.searchbox__TextChanged);
             this.searchbox.Leave += new System.EventHandler(this.searchbox_Leave);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1278, 713);
+            this.ClientSize = new System.Drawing.Size(1397, 713);
             this.Controls.Add(this.searchbox);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.enrolData);
@@ -755,6 +755,8 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  ";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Dashboard_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Dashboard_MouseMove);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -13,6 +13,7 @@ namespace Enrollment_System_2
 {
     public partial class Subjects : Form
     {
+        public Point mouseLocation;
         string subcode,year, semester, desc;
         decimal unit;
         enrollmentDataContext db = new enrollmentDataContext();
@@ -199,6 +200,21 @@ namespace Enrollment_System_2
             enrl.Show();
 
             this.Hide();
+        }
+
+        private void Subjects_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void Subjects_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
         }
 
         private void searchbox_Leave(object sender, EventArgs e)

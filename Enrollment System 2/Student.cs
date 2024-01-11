@@ -22,6 +22,8 @@ namespace Enrollment_System_2
         string gender, gender2, status, yrlvl;
         enrollmentDataContext db = new enrollmentDataContext();
         SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
+        public Point mouseLocation;
+
         public Student()
         {
             InitializeComponent();
@@ -359,6 +361,21 @@ namespace Enrollment_System_2
         private void CBstat_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             status = CBstat.SelectedItem.ToString();
+        }
+
+        private void Student_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void Student_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
         }
 
         private void btnEnroll_Click(object sender, EventArgs e)

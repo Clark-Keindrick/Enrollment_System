@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Student));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltime = new System.Windows.Forms.Label();
             this.lbldate = new System.Windows.Forms.Label();
@@ -69,6 +69,7 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.eNROLLMENT_DBDataSet = new Enrollment_System_2.ENROLLMENT_DBDataSet();
             this.pROGRAMTableAdapter = new Enrollment_System_2.ENROLLMENT_DBDataSetTableAdapters.PROGRAMTableAdapter();
+            this.CBstat = new Enrollment_System_2.MVButtons.CJComboBox();
             this.CBprog = new Enrollment_System_2.MVButtons.CJComboBox();
             this.CByrlvl = new Enrollment_System_2.MVButtons.CJComboBox();
             this.RBFemale = new Enrollment_System_2.CJcontrols.CJRadioButton();
@@ -84,7 +85,6 @@
             this.txtmidname = new Enrollment_System_2.CJcontrols.CJRoundTextbox();
             this.txtlname = new Enrollment_System_2.CJcontrols.CJRoundTextbox();
             this.txtfname = new Enrollment_System_2.CJcontrols.CJRoundTextbox();
-            this.CBstat = new Enrollment_System_2.MVButtons.CJComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -450,14 +450,14 @@
             this.studentData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.studentData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.studentData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.studentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.studentData.ColumnHeadersHeight = 30;
             this.studentData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.studentData.EnableHeadersVisualStyles = false;
@@ -467,12 +467,12 @@
             this.studentData.ReadOnly = true;
             this.studentData.RowHeadersVisible = false;
             this.studentData.RowHeadersWidth = 70;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            this.studentData.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.studentData.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.studentData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.studentData.Size = new System.Drawing.Size(1353, 356);
             this.studentData.TabIndex = 18;
@@ -552,6 +552,31 @@
             // pROGRAMTableAdapter
             // 
             this.pROGRAMTableAdapter.ClearBeforeFill = true;
+            // 
+            // CBstat
+            // 
+            this.CBstat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.CBstat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CBstat.BackColor = System.Drawing.Color.Linen;
+            this.CBstat.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.CBstat.BorderSize = 3;
+            this.CBstat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.CBstat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
+            this.CBstat.ForeColor = System.Drawing.Color.DimGray;
+            this.CBstat.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.CBstat.Items.AddRange(new object[] {
+            "Regular",
+            "Irregular"});
+            this.CBstat.ListBackColor = System.Drawing.Color.Moccasin;
+            this.CBstat.ListTextColor = System.Drawing.Color.DimGray;
+            this.CBstat.Location = new System.Drawing.Point(1246, 225);
+            this.CBstat.MinimumSize = new System.Drawing.Size(200, 30);
+            this.CBstat.Name = "CBstat";
+            this.CBstat.Padding = new System.Windows.Forms.Padding(3);
+            this.CBstat.Size = new System.Drawing.Size(280, 39);
+            this.CBstat.TabIndex = 31;
+            this.CBstat.Texts = "STATUS";
+            this.CBstat.OnSelectedIndexChanged += new System.EventHandler(this.CBstat_OnSelectedIndexChanged);
             // 
             // CBprog
             // 
@@ -868,31 +893,6 @@
             this.txtfname.Texts = "Firstname";
             this.txtfname.UnderlinedStyle = false;
             // 
-            // CBstat
-            // 
-            this.CBstat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.CBstat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CBstat.BackColor = System.Drawing.Color.Linen;
-            this.CBstat.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.CBstat.BorderSize = 3;
-            this.CBstat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.CBstat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(1)), true);
-            this.CBstat.ForeColor = System.Drawing.Color.DimGray;
-            this.CBstat.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.CBstat.Items.AddRange(new object[] {
-            "Regular",
-            "Irregular"});
-            this.CBstat.ListBackColor = System.Drawing.Color.Moccasin;
-            this.CBstat.ListTextColor = System.Drawing.Color.DimGray;
-            this.CBstat.Location = new System.Drawing.Point(1246, 225);
-            this.CBstat.MinimumSize = new System.Drawing.Size(200, 30);
-            this.CBstat.Name = "CBstat";
-            this.CBstat.Padding = new System.Windows.Forms.Padding(3);
-            this.CBstat.Size = new System.Drawing.Size(280, 39);
-            this.CBstat.TabIndex = 31;
-            this.CBstat.Texts = "STATUS";
-            this.CBstat.OnSelectedIndexChanged += new System.EventHandler(this.CBstat_OnSelectedIndexChanged);
-            // 
             // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -928,6 +928,8 @@
             this.Name = "Student";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Student_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Student_MouseMove);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

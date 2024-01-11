@@ -16,6 +16,7 @@ namespace Enrollment_System_2
 {
     public partial class Professor : Form
     {
+        public Point mouseLocation;
         int id;
         enrollmentDataContext db = new enrollmentDataContext();
         public Professor()
@@ -308,6 +309,21 @@ namespace Enrollment_System_2
             enrl.Show();
 
             this.Hide();
+        }
+
+        private void Professor_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void Professor_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
         }
     }
 }

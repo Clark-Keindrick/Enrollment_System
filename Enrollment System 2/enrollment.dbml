@@ -347,15 +347,6 @@
     <Parameter Name="STAT" Parameter="sTAT" Type="System.String" DbType="VarChar(15)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.enr_view" Method="enr_view">
-    <ElementType Name="enr_viewResult">
-      <Column Name="MIS_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="[STUDENT ID]" Member="STUDENT_ID" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
-      <Column Name="STATUS" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
-      <Column Name="YEAR_LEVEL" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
-      <Column Name="SEMESTER" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.enr_search" Method="enr_search">
     <Parameter Name="key" Type="System.String" DbType="VarChar(MAX)" />
     <ElementType Name="enr_searchResult">
@@ -366,19 +357,14 @@
       <Column Name="SEMESTER" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.search_enrollees" Method="search_enrollees">
-    <Parameter Name="key" Type="System.String" DbType="VarChar(MAX)" />
-    <ElementType Name="search_enrolleesResult">
-      <Column Name="[STUDENT ID]" Member="STUDENT_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FIRSTNAME" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
-      <Column Name="LASTNAME" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
-      <Column Name="[MIDDLE NAME]" Member="MIDDLE_NAME" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
-      <Column Name="[YEAR LEVEL]" Member="YEAR_LEVEL" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
-      <Column Name="STATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="PROGRAM" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
-      <Column Name="SHIFT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="SECTION" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
-      <Column Name="[DATE ENROLLED]" Member="DATE_ENROLLED" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+  <Function Name="dbo.enr_view" Method="enr_view">
+    <ElementType Name="enr_viewResult">
+      <Column Name="MIS_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[STUDENT ID]" Member="STUDENT_ID" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="YEAR_LEVEL" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="SEMESTER" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ENROLL_DATE" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
   <Function Name="dbo.enrollees" Method="enrollees">
@@ -388,11 +374,26 @@
       <Column Name="LASTNAME" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
       <Column Name="[MIDDLE NAME]" Member="MIDDLE_NAME" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
       <Column Name="[YEAR LEVEL]" Member="YEAR_LEVEL" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="SEMESTER" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="STATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="PROGRAM" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
       <Column Name="SHIFT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="SECTION" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
-      <Column Name="[DATE ENROLLED]" Member="DATE_ENROLLED" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.search_enrollees" Method="search_enrollees">
+    <Parameter Name="key" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="search_enrolleesResult">
+      <Column Name="[STUDENT ID]" Member="STUDENT_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FIRSTNAME" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="LASTNAME" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="[MIDDLE NAME]" Member="MIDDLE_NAME" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="[YEAR LEVEL]" Member="YEAR_LEVEL" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="SEMESTER" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PROGRAM" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="SHIFT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SECTION" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

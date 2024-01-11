@@ -14,6 +14,7 @@ namespace Enrollment_System_2
 {
     public partial class Dashboard : Form
     {
+        public Point mouseLocation;
         DataTable dt = new DataTable();
         enrollmentDataContext db = new enrollmentDataContext();
         SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
@@ -150,6 +151,21 @@ namespace Enrollment_System_2
         private void searchbox_Leave(object sender, EventArgs e)
         {
             enrolData.DataSource = db.enrollees();
+        }
+
+        private void Dashboard_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void Dashboard_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
         }
     }
 }

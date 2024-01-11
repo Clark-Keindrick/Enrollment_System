@@ -14,6 +14,7 @@ namespace Enrollment_System_2
 {
     public partial class Enroll : Form
     {
+        public Point mouseLocation;
         string mis, status;
         int studid;
         enrollmentDataContext db = new enrollmentDataContext();
@@ -206,6 +207,21 @@ namespace Enrollment_System_2
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Exit Application", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Enroll_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void Enroll_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
             }
         }
 
