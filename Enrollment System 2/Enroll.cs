@@ -18,7 +18,7 @@ namespace Enrollment_System_2
         string mis, status;
         int studid;
         enrollmentDataContext db = new enrollmentDataContext();
-        SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source = LAPTOP-7VJGOGAD\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
         public Enroll()
         {
             InitializeComponent();
@@ -223,6 +223,13 @@ namespace Enrollment_System_2
                 mousePose.Offset(mouseLocation.X, mouseLocation.Y);
                 Location = mousePose;
             }
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Personal personalForm = new Personal();
+            personalForm.Show();
+            this.Hide();
         }
 
         private void enrData_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -94,8 +94,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1619, 56);
+            this.panel1.Size = new System.Drawing.Size(2144, 68);
             this.panel1.TabIndex = 18;
             // 
             // lbltime
@@ -103,9 +104,10 @@
             this.lbltime.AutoSize = true;
             this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltime.ForeColor = System.Drawing.Color.White;
-            this.lbltime.Location = new System.Drawing.Point(1313, 16);
+            this.lbltime.Location = new System.Drawing.Point(1759, 16);
+            this.lbltime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltime.Name = "lbltime";
-            this.lbltime.Size = new System.Drawing.Size(57, 24);
+            this.lbltime.Size = new System.Drawing.Size(73, 29);
             this.lbltime.TabIndex = 30;
             this.lbltime.Text = "Time";
             // 
@@ -114,9 +116,10 @@
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldate.ForeColor = System.Drawing.Color.White;
-            this.lbldate.Location = new System.Drawing.Point(1126, 16);
+            this.lbldate.Location = new System.Drawing.Point(1358, 16);
+            this.lbldate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(52, 24);
+            this.lbldate.Size = new System.Drawing.Size(67, 29);
             this.lbldate.TabIndex = 31;
             this.lbldate.Text = "Date";
             // 
@@ -126,11 +129,13 @@
             this.settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.settings.FlatAppearance.BorderSize = 0;
             this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings.Location = new System.Drawing.Point(1497, 3);
+            this.settings.Location = new System.Drawing.Point(2006, 6);
+            this.settings.Margin = new System.Windows.Forms.Padding(4);
             this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(58, 43);
+            this.settings.Size = new System.Drawing.Size(77, 53);
             this.settings.TabIndex = 18;
             this.settings.UseVisualStyleBackColor = true;
+            this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
             // button1
             // 
@@ -139,9 +144,10 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(202, 16);
+            this.button1.Location = new System.Drawing.Point(135, 19);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 24);
+            this.button1.Size = new System.Drawing.Size(33, 30);
             this.button1.TabIndex = 18;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -150,9 +156,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(4, 11);
+            this.label1.Location = new System.Drawing.Point(-129, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 28);
+            this.label1.Size = new System.Drawing.Size(235, 35);
             this.label1.TabIndex = 18;
             this.label1.Text = "Enrollment System";
             // 
@@ -176,18 +183,20 @@
             this.panel2.Controls.Add(this.btnDash);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 56);
+            this.panel2.Location = new System.Drawing.Point(0, 68);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(195, 576);
+            this.panel2.Size = new System.Drawing.Size(260, 695);
             this.panel2.TabIndex = 18;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::Enrollment_System_2.Properties.Resources.licensing;
             this.pictureBox12.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.InitialImage")));
-            this.pictureBox12.Location = new System.Drawing.Point(9, 333);
+            this.pictureBox12.Location = new System.Drawing.Point(12, 410);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox12.Size = new System.Drawing.Size(35, 32);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 32;
             this.pictureBox12.TabStop = false;
@@ -199,9 +208,10 @@
             this.btnEnroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnroll.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnroll.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEnroll.Location = new System.Drawing.Point(39, 333);
+            this.btnEnroll.Location = new System.Drawing.Point(52, 410);
+            this.btnEnroll.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnroll.Name = "btnEnroll";
-            this.btnEnroll.Size = new System.Drawing.Size(157, 30);
+            this.btnEnroll.Size = new System.Drawing.Size(209, 43);
             this.btnEnroll.TabIndex = 33;
             this.btnEnroll.Text = "Enroll";
             this.btnEnroll.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -215,9 +225,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogout.Location = new System.Drawing.Point(39, 383);
+            this.btnLogout.Location = new System.Drawing.Point(52, 471);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(157, 30);
+            this.btnLogout.Size = new System.Drawing.Size(209, 43);
             this.btnLogout.TabIndex = 18;
             this.btnLogout.Text = "Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -228,9 +239,10 @@
             // 
             this.pictureBox7.Image = global::Enrollment_System_2.Properties.Resources.logout;
             this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(9, 383);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 471);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox7.Size = new System.Drawing.Size(35, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
@@ -242,9 +254,10 @@
             this.btnClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClass.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClass.Location = new System.Drawing.Point(39, 283);
+            this.btnClass.Location = new System.Drawing.Point(52, 348);
+            this.btnClass.Margin = new System.Windows.Forms.Padding(4);
             this.btnClass.Name = "btnClass";
-            this.btnClass.Size = new System.Drawing.Size(157, 30);
+            this.btnClass.Size = new System.Drawing.Size(209, 43);
             this.btnClass.TabIndex = 18;
             this.btnClass.Text = "Classes";
             this.btnClass.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -255,9 +268,10 @@
             // 
             this.pictureBox6.Image = global::Enrollment_System_2.Properties.Resources._class;
             this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(9, 283);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 348);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox6.Size = new System.Drawing.Size(35, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
@@ -269,9 +283,10 @@
             this.btnSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSub.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSub.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSub.Location = new System.Drawing.Point(39, 233);
+            this.btnSub.Location = new System.Drawing.Point(52, 287);
+            this.btnSub.Margin = new System.Windows.Forms.Padding(4);
             this.btnSub.Name = "btnSub";
-            this.btnSub.Size = new System.Drawing.Size(157, 30);
+            this.btnSub.Size = new System.Drawing.Size(209, 43);
             this.btnSub.TabIndex = 18;
             this.btnSub.Text = "Subjects";
             this.btnSub.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -281,9 +296,10 @@
             // 
             this.pictureBox5.Image = global::Enrollment_System_2.Properties.Resources.subjects;
             this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(9, 233);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 287);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox5.Size = new System.Drawing.Size(35, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -294,9 +310,10 @@
             this.btnProg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProg.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProg.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnProg.Location = new System.Drawing.Point(39, 183);
+            this.btnProg.Location = new System.Drawing.Point(52, 225);
+            this.btnProg.Margin = new System.Windows.Forms.Padding(4);
             this.btnProg.Name = "btnProg";
-            this.btnProg.Size = new System.Drawing.Size(157, 27);
+            this.btnProg.Size = new System.Drawing.Size(209, 33);
             this.btnProg.TabIndex = 18;
             this.btnProg.Text = "Programs";
             this.btnProg.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -307,9 +324,10 @@
             // 
             this.pictureBox4.Image = global::Enrollment_System_2.Properties.Resources.programs;
             this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(9, 183);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 225);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
@@ -320,9 +338,10 @@
             this.btnProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProf.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProf.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnProf.Location = new System.Drawing.Point(39, 133);
+            this.btnProf.Location = new System.Drawing.Point(52, 164);
+            this.btnProf.Margin = new System.Windows.Forms.Padding(4);
             this.btnProf.Name = "btnProf";
-            this.btnProf.Size = new System.Drawing.Size(157, 26);
+            this.btnProf.Size = new System.Drawing.Size(209, 32);
             this.btnProf.TabIndex = 18;
             this.btnProf.Text = "Professors";
             this.btnProf.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -333,9 +352,10 @@
             // 
             this.pictureBox3.Image = global::Enrollment_System_2.Properties.Resources.teacher;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 133);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 164);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -346,9 +366,10 @@
             this.btnStud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStud.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStud.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnStud.Location = new System.Drawing.Point(39, 83);
+            this.btnStud.Location = new System.Drawing.Point(52, 102);
+            this.btnStud.Margin = new System.Windows.Forms.Padding(4);
             this.btnStud.Name = "btnStud";
-            this.btnStud.Size = new System.Drawing.Size(157, 26);
+            this.btnStud.Size = new System.Drawing.Size(209, 32);
             this.btnStud.TabIndex = 18;
             this.btnStud.Text = "Students";
             this.btnStud.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -359,9 +380,10 @@
             // 
             this.pictureBox2.Image = global::Enrollment_System_2.Properties.Resources.student;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(9, 83);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 102);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -372,9 +394,10 @@
             this.btnDash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDash.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDash.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnDash.Location = new System.Drawing.Point(39, 33);
+            this.btnDash.Location = new System.Drawing.Point(52, 41);
+            this.btnDash.Margin = new System.Windows.Forms.Padding(4);
             this.btnDash.Name = "btnDash";
-            this.btnDash.Size = new System.Drawing.Size(157, 26);
+            this.btnDash.Size = new System.Drawing.Size(209, 32);
             this.btnDash.TabIndex = 18;
             this.btnDash.Text = "Dashboard";
             this.btnDash.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -385,9 +408,10 @@
             // 
             this.pictureBox1.Image = global::Enrollment_System_2.Properties.Resources.home;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 41);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -397,18 +421,20 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(195, 56);
+            this.panel3.Location = new System.Drawing.Point(260, 68);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1424, 44);
+            this.panel3.Size = new System.Drawing.Size(1884, 54);
             this.panel3.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1233, 12);
+            this.label3.Location = new System.Drawing.Point(1644, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 20);
+            this.label3.Size = new System.Drawing.Size(156, 25);
             this.label3.TabIndex = 18;
             this.label3.Text = "Manage Subjects";
             // 
@@ -416,9 +442,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 12);
+            this.label2.Location = new System.Drawing.Point(35, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 21);
+            this.label2.Size = new System.Drawing.Size(153, 28);
             this.label2.TabIndex = 18;
             this.label2.Text = "Subject\'s Entry";
             // 
@@ -447,7 +474,8 @@
             this.subData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.subData.EnableHeadersVisualStyles = false;
             this.subData.GridColor = System.Drawing.Color.SteelBlue;
-            this.subData.Location = new System.Drawing.Point(709, 164);
+            this.subData.Location = new System.Drawing.Point(945, 202);
+            this.subData.Margin = new System.Windows.Forms.Padding(4);
             this.subData.Name = "subData";
             this.subData.ReadOnly = true;
             this.subData.RowHeadersVisible = false;
@@ -459,7 +487,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.subData.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.subData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.subData.Size = new System.Drawing.Size(899, 456);
+            this.subData.Size = new System.Drawing.Size(1199, 561);
             this.subData.TabIndex = 25;
             this.subData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.subData_CellContentClick);
             // 
@@ -479,11 +507,12 @@
             "2ND SEMESTER"});
             this.CBsem.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.CBsem.ListTextColor = System.Drawing.Color.Black;
-            this.CBsem.Location = new System.Drawing.Point(227, 364);
-            this.CBsem.MinimumSize = new System.Drawing.Size(200, 30);
+            this.CBsem.Location = new System.Drawing.Point(303, 448);
+            this.CBsem.Margin = new System.Windows.Forms.Padding(4);
+            this.CBsem.MinimumSize = new System.Drawing.Size(267, 37);
             this.CBsem.Name = "CBsem";
-            this.CBsem.Padding = new System.Windows.Forms.Padding(2);
-            this.CBsem.Size = new System.Drawing.Size(415, 41);
+            this.CBsem.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CBsem.Size = new System.Drawing.Size(553, 50);
             this.CBsem.TabIndex = 3;
             this.CBsem.Texts = "SELECT SEMESTER";
             this.CBsem.OnSelectedIndexChanged += new System.EventHandler(this.CBsem_OnSelectedIndexChanged);
@@ -506,11 +535,12 @@
             "4TH YEAR"});
             this.CByear.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.CByear.ListTextColor = System.Drawing.Color.Black;
-            this.CByear.Location = new System.Drawing.Point(227, 431);
-            this.CByear.MinimumSize = new System.Drawing.Size(200, 30);
+            this.CByear.Location = new System.Drawing.Point(303, 530);
+            this.CByear.Margin = new System.Windows.Forms.Padding(4);
+            this.CByear.MinimumSize = new System.Drawing.Size(267, 37);
             this.CByear.Name = "CByear";
-            this.CByear.Padding = new System.Windows.Forms.Padding(2);
-            this.CByear.Size = new System.Drawing.Size(415, 41);
+            this.CByear.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CByear.Size = new System.Drawing.Size(553, 50);
             this.CByear.TabIndex = 4;
             this.CByear.Texts = "CHOOSE YEAR";
             this.CByear.OnSelectedIndexChanged += new System.EventHandler(this.CByear_OnSelectedIndexChanged);
@@ -524,15 +554,15 @@
             this.tbUNIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUNIT.ForeColor = System.Drawing.Color.DimGray;
             this.tbUNIT.IsFocused = false;
-            this.tbUNIT.Location = new System.Drawing.Point(227, 297);
-            this.tbUNIT.Margin = new System.Windows.Forms.Padding(4);
+            this.tbUNIT.Location = new System.Drawing.Point(303, 366);
+            this.tbUNIT.Margin = new System.Windows.Forms.Padding(5);
             this.tbUNIT.Multiline = false;
             this.tbUNIT.Name = "tbUNIT";
-            this.tbUNIT.Padding = new System.Windows.Forms.Padding(7);
+            this.tbUNIT.Padding = new System.Windows.Forms.Padding(9);
             this.tbUNIT.PasswordChar = false;
             this.tbUNIT.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tbUNIT.PlaceholderText = "UNIT";
-            this.tbUNIT.Size = new System.Drawing.Size(415, 40);
+            this.tbUNIT.Size = new System.Drawing.Size(553, 48);
             this.tbUNIT.TabIndex = 2;
             this.tbUNIT.Texts = "UNIT";
             this.tbUNIT.UnderlinedStyle = false;
@@ -547,15 +577,15 @@
             this.tbDESC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDESC.ForeColor = System.Drawing.Color.DimGray;
             this.tbDESC.IsFocused = false;
-            this.tbDESC.Location = new System.Drawing.Point(227, 230);
-            this.tbDESC.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDESC.Location = new System.Drawing.Point(303, 283);
+            this.tbDESC.Margin = new System.Windows.Forms.Padding(5);
             this.tbDESC.Multiline = false;
             this.tbDESC.Name = "tbDESC";
-            this.tbDESC.Padding = new System.Windows.Forms.Padding(7);
+            this.tbDESC.Padding = new System.Windows.Forms.Padding(9);
             this.tbDESC.PasswordChar = false;
             this.tbDESC.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tbDESC.PlaceholderText = "DESCRIPTION";
-            this.tbDESC.Size = new System.Drawing.Size(415, 40);
+            this.tbDESC.Size = new System.Drawing.Size(553, 48);
             this.tbDESC.TabIndex = 1;
             this.tbDESC.Texts = "DESCRIPTION";
             this.tbDESC.UnderlinedStyle = false;
@@ -569,15 +599,15 @@
             this.searchbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchbox.ForeColor = System.Drawing.Color.DimGray;
             this.searchbox.IsFocused = false;
-            this.searchbox.Location = new System.Drawing.Point(1112, 127);
-            this.searchbox.Margin = new System.Windows.Forms.Padding(4);
+            this.searchbox.Location = new System.Drawing.Point(1483, 149);
+            this.searchbox.Margin = new System.Windows.Forms.Padding(5);
             this.searchbox.Multiline = false;
             this.searchbox.Name = "searchbox";
-            this.searchbox.Padding = new System.Windows.Forms.Padding(7);
+            this.searchbox.Padding = new System.Windows.Forms.Padding(9);
             this.searchbox.PasswordChar = false;
             this.searchbox.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.searchbox.PlaceholderText = "SEARCH PROGRAM";
-            this.searchbox.Size = new System.Drawing.Size(496, 35);
+            this.searchbox.Size = new System.Drawing.Size(661, 44);
             this.searchbox.TabIndex = 5;
             this.searchbox.Texts = "SEARCH SUBJECT";
             this.searchbox.UnderlinedStyle = false;
@@ -596,9 +626,10 @@
             this.deleteBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBTN.ForeColor = System.Drawing.Color.White;
-            this.deleteBTN.Location = new System.Drawing.Point(528, 523);
+            this.deleteBTN.Location = new System.Drawing.Point(704, 644);
+            this.deleteBTN.Margin = new System.Windows.Forms.Padding(4);
             this.deleteBTN.Name = "deleteBTN";
-            this.deleteBTN.Size = new System.Drawing.Size(136, 43);
+            this.deleteBTN.Size = new System.Drawing.Size(181, 53);
             this.deleteBTN.TabIndex = 24;
             this.deleteBTN.Text = "DELETE";
             this.deleteBTN.TextColor = System.Drawing.Color.White;
@@ -617,9 +648,10 @@
             this.updateBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBTN.ForeColor = System.Drawing.Color.White;
-            this.updateBTN.Location = new System.Drawing.Point(372, 523);
+            this.updateBTN.Location = new System.Drawing.Point(496, 644);
+            this.updateBTN.Margin = new System.Windows.Forms.Padding(4);
             this.updateBTN.Name = "updateBTN";
-            this.updateBTN.Size = new System.Drawing.Size(136, 43);
+            this.updateBTN.Size = new System.Drawing.Size(181, 53);
             this.updateBTN.TabIndex = 23;
             this.updateBTN.Text = "UPDATE";
             this.updateBTN.TextColor = System.Drawing.Color.White;
@@ -638,9 +670,10 @@
             this.submitBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitBTN.ForeColor = System.Drawing.Color.White;
-            this.submitBTN.Location = new System.Drawing.Point(216, 523);
+            this.submitBTN.Location = new System.Drawing.Point(288, 644);
+            this.submitBTN.Margin = new System.Windows.Forms.Padding(4);
             this.submitBTN.Name = "submitBTN";
-            this.submitBTN.Size = new System.Drawing.Size(136, 43);
+            this.submitBTN.Size = new System.Drawing.Size(181, 53);
             this.submitBTN.TabIndex = 22;
             this.submitBTN.Text = "SUBMIT";
             this.submitBTN.TextColor = System.Drawing.Color.White;
@@ -656,24 +689,26 @@
             this.tbSUB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSUB.ForeColor = System.Drawing.Color.DimGray;
             this.tbSUB.IsFocused = false;
-            this.tbSUB.Location = new System.Drawing.Point(227, 163);
-            this.tbSUB.Margin = new System.Windows.Forms.Padding(4);
+            this.tbSUB.Location = new System.Drawing.Point(303, 201);
+            this.tbSUB.Margin = new System.Windows.Forms.Padding(5);
             this.tbSUB.Multiline = false;
             this.tbSUB.Name = "tbSUB";
-            this.tbSUB.Padding = new System.Windows.Forms.Padding(7);
+            this.tbSUB.Padding = new System.Windows.Forms.Padding(9);
             this.tbSUB.PasswordChar = false;
             this.tbSUB.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tbSUB.PlaceholderText = "COURSE CODE";
-            this.tbSUB.Size = new System.Drawing.Size(415, 40);
+            this.tbSUB.Size = new System.Drawing.Size(553, 48);
             this.tbSUB.TabIndex = 0;
             this.tbSUB.Texts = "COURSE CODE";
             this.tbSUB.UnderlinedStyle = false;
             // 
             // Subjects
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1619, 632);
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1942, 778);
             this.Controls.Add(this.CBsem);
             this.Controls.Add(this.CByear);
             this.Controls.Add(this.tbUNIT);
@@ -688,9 +723,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Subjects";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Subjects_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Subjects_MouseMove);
             this.panel1.ResumeLayout(false);

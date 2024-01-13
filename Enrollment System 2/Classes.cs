@@ -22,7 +22,7 @@ namespace Enrollment_System_2
         int profid;
 
         enrollmentDataContext db = new enrollmentDataContext();
-        SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source = LAPTOP-7VJGOGAD\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
 
         public Classes()
         {
@@ -453,6 +453,13 @@ namespace Enrollment_System_2
                 mousePose.Offset(mouseLocation.X, mouseLocation.Y);
                 Location = mousePose;
             }
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Personal personalForm = new Personal();
+            personalForm.Show();
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

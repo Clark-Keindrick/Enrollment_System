@@ -217,6 +217,13 @@ namespace Enrollment_System_2
             }
         }
 
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Personal personalForm = new Personal();
+            personalForm.Show();
+            this.Hide();
+        }
+
         private void searchbox_Leave(object sender, EventArgs e)
         {
             subData.DataSource = db.sub_view();
