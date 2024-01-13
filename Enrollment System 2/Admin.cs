@@ -147,12 +147,11 @@ namespace Enrollment_System_2
 
         private void submitBTN_Click(object sender, EventArgs e)
         {
-            Regex regphnum = new Regex(@"^[0-9]{11}$"); 
-
-            string first = fname.Text;
-            string last = lname.Text;
-            string middle = mname.Text;
-            string contact = phone.Text;
+            Regex regphnum = new Regex(@"^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$");
+            string first = fname.Texts;
+            string last = lname.Texts;
+            string middle = mname.Texts;
+            string contact = phone.Texts;
 
             // Validate phone number
             if (!regphnum.IsMatch(contact))
@@ -161,21 +160,13 @@ namespace Enrollment_System_2
                 return;
             }
 
-            // Check for negative numbers
-            if (int.TryParse(contact, out int phoneNumber) && phoneNumber < 0)
-            {
-                MessageBox.Show("Phone number cannot be negative", "Try Again");
-                return;
-            }
-
-            string usern = userna.Text;
-            string pass = password.Text;
-            string confirm = cp.Text;
+            string usern = userna.Texts;
+            string pass = password.Texts;
+            string confirm = cp.Texts;
 
             if (pass != confirm)
             {
-                MessageBox.Show("Password does not match", "Try Again");
-                return;
+                MessageBox.Show("Password not match", "Try Again");
             }
 
             db.ad_save(first, last, middle, contact, usern, pass);
@@ -183,8 +174,11 @@ namespace Enrollment_System_2
             fc.Save_IMAGE(userna.Texts);
             Clear();
             detectBTN.Visible = true;
+
             admnData.DataSource = db.ad_view();
         }
+
+
 
 
         private void Clear()

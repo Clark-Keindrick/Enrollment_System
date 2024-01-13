@@ -83,12 +83,12 @@ namespace Enrollment_System_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(178, 875);
+            this.label1.BackColor = System.Drawing.Color.Navy;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(778, 744);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1626, 65);
+            this.label1.Size = new System.Drawing.Size(483, 19);
             this.label1.TabIndex = 16;
             this.label1.Text = "College of Computer, Information and Communications Technology";
             // 
@@ -176,13 +176,13 @@ namespace Enrollment_System_2
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 971);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lognbtn);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.time);
             this.Controls.Add(this.date);
             this.Controls.Add(this.pictureBox2);
