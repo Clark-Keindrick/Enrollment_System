@@ -325,5 +325,12 @@ namespace Enrollment_System_2
                 Location = mousePose;
             }
         }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Personal personalForm = new Personal();
+            personalForm.Show();
+            this.Hide();
+        }
     }
 }

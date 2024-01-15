@@ -21,7 +21,7 @@ namespace Enrollment_System_2
         int program;
         string gender, gender2, status, yrlvl;
         enrollmentDataContext db = new enrollmentDataContext();
-        SqlConnection conn = new SqlConnection(@"Data Source = CLARK-KEINDRICK\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
+        SqlConnection conn = new SqlConnection(@"Data Source = LAPTOP-7VJGOGAD\SQLEXPRESS; Initial Catalog = ENROLLMENT_DB; Integrated security=True;");
         public Point mouseLocation;
 
         public Student()
@@ -261,12 +261,19 @@ namespace Enrollment_System_2
 
         private void deleteBTN_Click(object sender, EventArgs e)
         {
-            db.stud_delete(id);
-            MessageBox.Show("Successfully Deleted!", "OK");
-            studentData.DataSource = db.stud_view();
-            clear();
-            updateBTN.Enabled = false;
-            deleteBTN.Enabled = false;
+            try
+            {
+                db.stud_delete(id);
+                MessageBox.Show("Successfully Deleted!", "OK");
+                studentData.DataSource = db.stud_view();
+                clear();
+                updateBTN.Enabled = false;
+                deleteBTN.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Exit Application", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void searchbox__TextChanged(object sender, EventArgs e)

@@ -16,3 +16,52 @@ C:\Users\User\OneDrive\Programming 2\WinForms\Enrollment System 2\Enrollment Sys
 C:\Users\User\OneDrive\Programming 2\WinForms\Enrollment System 2\Enrollment System 2\obj\Debug\Enrollment_System_2.Subjects.resources
 C:\Users\User\OneDrive\Programming 2\WinForms\Enrollment System 2\Enrollment System 2\obj\Debug\Enrollment_System_2.Classes.resources
 C:\Users\User\OneDrive\Programming 2\WinForms\Enrollment System 2\Enrollment System 2\obj\Debug\Enrollment_System_2.Enroll.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Enrollment System 2.exe.config
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Enrollment System 2.exe
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Enrollment System 2.pdb
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment System 2.csproj.AssemblyReference.cache
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.CJcontrols.CJRoundTextbox.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.CJcontrols.CJTextbox.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Classes.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Dashboard.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Enroll.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Professor.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Programs.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Properties.Resources.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Student.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Subjects.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment System 2.csproj.GenerateResource.cache
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment System 2.csproj.CoreCompileInputs.cache
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment System 2.exe
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment System 2.pdb
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Emgu.CV.UI.GL.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Emgu.CV.World.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\FaceRecognition.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\OpenTK.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\ZedGraph.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Emgu.CV.UI.GL.xml
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\Emgu.CV.World.xml
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\OpenTK.xml
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\ZedGraph.xml
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Admin.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Face.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Login.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment_System_2.Personal.resources
+C:\Users\Julie\source\repos\ENROL\Enrollment System 2\obj\Debug\Enrollment System 2.csproj.CopyComplete
